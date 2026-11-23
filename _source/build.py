@@ -2,7 +2,7 @@
 """Génère le site youbiff.fr (statique, GitHub Pages) dans le dossier OUT."""
 import os, re, json, html, shutil, sys
 
-SRC = os.environ.get('YB_SRC', '/home/claude/youbiff-site')          # dépôt existant (pages légales d'origine)
+SRC = os.environ.get('YB_SRC', '/home/claude/legal-src')  # pages légales d'origine
 OUT = sys.argv[1] if len(sys.argv) > 1 else '/home/claude/out'
 B = os.path.dirname(os.path.abspath(__file__))
 DOMAIN = 'https://youbiff.fr'

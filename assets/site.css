@@ -212,3 +212,49 @@ article.art{flex:1;min-width:0;max-width:760px;display:flex;flex-direction:colum
 .legalpage p:last-child{margin-bottom:0}
 .toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(140px);background:#10162B;color:#fff;padding:14px 20px;border-radius:14px;font-weight:700;transition:transform .25s;z-index:50;max-width:90vw}
 .toast.show{transform:translateX(-50%) translateY(0)}
+
+/* ===== Téléphone : tailles réduites ===== */
+@media (max-width:720px){
+ .hero-t{font-size:34px!important;line-height:1.08!important}
+ .h2{font-size:26px!important}
+ .hero{padding:36px 0 32px}
+ .hero h1{font-size:34px}
+ .sec{padding:44px 0}
+ .stack{gap:22px}
+ .pagehead{padding:32px 0 4px}
+ .pagehead .lead,.lead{font-size:16px}
+ .g-stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+ .stat{padding:16px;border-radius:16px}
+ .stat b{font-size:24px}
+ .stat span{font-size:13px}
+ .guide-c{min-height:0;padding:20px;border-radius:20px}
+ .guide-c .t{font-size:20px}
+ .tool-c{padding:16px;border-radius:18px}
+ .g-tools{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+ .tool-c .d{display:none}
+ .tool-c .t{font-size:15px}
+ .tool-c .ic{width:38px;height:38px}
+ .price .a{font-size:28px}
+ .mini{padding:14px}
+ .mini b{font-size:14px}.mini span{font-size:13px}
+ .res{padding:20px}
+ .res .tot{font-size:36px}
+ .art h2{font-size:22px;gap:10px}
+ .art h2 .num{width:34px;height:34px;font-size:16px}
+ .art p,.art li{font-size:16px}
+ .fiche{padding:20px;border-radius:20px}
+ .fiche h1{font-size:28px}
+ .fiche .illu{height:130px;font-size:60px}
+ .fiche li{font-size:16px}
+ .legalpage section{padding:18px}
+ .legalpage h2{font-size:19px}
+ .legalpage p{font-size:15px}
+ .btn-ink{min-height:50px;font-size:15px}
+ details.q summary{font-size:16px}
+ .site-f{padding:40px 0 24px}
+ .site-f .cols{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+ .logo{font-size:22px}
+ .site-h .wrap{min-height:64px}
+ .menu{top:64px}
+}
+@media (max-width:360px){.g-tools{grid-template-columns:minmax(0,1fr)}.tool-c .d{display:block}}
