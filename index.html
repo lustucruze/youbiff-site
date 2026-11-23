@@ -1,53 +1,98 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>YouBiff : comprendre l’argent quand on est étudiant</title>
-<meta name="description" content="YouBiff est une application d’éducation financière pour les étudiants : budget, épargne, Bourse, immobilier, impôts.">
+<meta name="description" content="Budget, appart, job, épargne, Bourse : des fiches claires, 10 outils gratuits et des guides pas à pas. Sans jargon, sans pub, au prix étudiant.">
 <link rel="canonical" href="https://youbiff.fr/">
-<style>
-:root{--paper:#F6F4EE;--card:#fff;--ink:#10162B;--muted:#5B6175;--line:#E3DFD5;--green:#0B7F58;--lime:#C8F27A}
-*{box-sizing:border-box}
-body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-main,header,footer{max-width:720px;margin:0 auto;padding:0 20px}
-header{padding-top:28px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
-.logo{font-weight:800;font-size:22px;color:var(--ink);text-decoration:none}
-nav a{color:var(--muted);text-decoration:none;font-size:15px;margin-left:16px}
-nav a:hover,footer a:hover{color:var(--green)}
-h1{font-size:34px;line-height:1.15;margin:40px 0 8px}
-h1 mark{background:var(--lime);color:inherit;padding:0 6px;border-radius:6px}
-h2{font-size:20px;margin:32px 0 8px}
-p{margin:0 0 12px}
-.resume{color:var(--muted);margin-bottom:24px}
-.carte{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;margin:16px 0}
-.bouton{display:inline-block;background:var(--green);color:#fff;font-weight:700;text-decoration:none;padding:14px 22px;border-radius:14px;margin-top:8px}
-a{color:var(--green)}
-footer{color:var(--muted);font-size:14px;padding-top:40px;padding-bottom:40px;border-top:1px solid var(--line);margin-top:48px}
-footer a{color:var(--muted);margin-right:14px}
-</style>
+<meta property="og:title" content="YouBiff : comprendre l’argent quand on est étudiant">
+<meta property="og:description" content="Budget, appart, job, épargne, Bourse : des fiches claires, 10 outils gratuits et des guides pas à pas. Sans jargon, sans pub, au prix étudiant.">
+<meta property="og:url" content="https://youbiff.fr/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta name="theme-color" content="#F6F4EE">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
-<header>
-<a class="logo" href="/">YouBiff</a>
-<nav><a href="/confidentialite/">Confidentialité</a><a href="/conditions/">Conditions</a><a href="mailto:contact@youbiff.fr">Contact</a></nav>
+<header class="site-h">
+  <div class="wrap">
+    <a class="logo" href="/">You<span>Biff</span></a>
+    <nav class="menu" aria-label="Menu principal"><a href="/apprendre/">Apprendre</a><a href="/outils/">Outils</a><a href="/passer-a-l-action/">Passer à l’action</a><a href="/lexique/">Lexique</a><a href="/prix/">Prix étudiant</a></nav>
+    <a class="btn-dl" href="/telecharger/">Télécharger l’app</a>
+    <button class="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
 </header>
 <main>
-<h1>Comprendre l’argent, <mark>simplement.</mark></h1>
-<p class="resume">YouBiff est une application iPhone d’éducation financière pour les étudiants.</p>
-<div class="carte"><h2 style="margin-top:0">Ce que tu apprends</h2>
-<p>La banque, le budget, l’épargne, la Bourse, l’immobilier, les impôts et la micro-entreprise. Des leçons courtes, des quiz, un simulateur et un portefeuille fictif pour t’entraîner sans risque.</p>
-<p>Les parcours « Premiers pas » et « Budget » sont gratuits. Le reste est accessible avec un abonnement, payé et géré par Apple.</p></div>
-<div class="carte"><h2 style="margin-top:0">Ce que YouBiff n’est pas</h2>
-<p>YouBiff ne donne pas de conseil en investissement. Les leçons servent à comprendre, pas à décider à ta place.</p></div>
-<div class="carte"><h2 style="margin-top:0">Besoin d’aide ?</h2>
-<p>Une question, un souci avec ton compte ou ton abonnement ? Écris-nous, on te répond.</p>
-<p>Pour supprimer ton compte : dans l’app, onglet Profil, puis « Supprimer mon compte ». Tu peux aussi nous le demander par e-mail.</p>
-<a class="bouton" href="mailto:contact@youbiff.fr">contact@youbiff.fr</a></div>
+<section class="hero"><div class="wrap">
+    <div style="flex: 1; min-width: 300px; display: flex; flex-direction: column; gap: 22px">
+      <span class="pill">100 % pensé pour les étudiants</span>
+      <h1 class="hero-t">Ton argent,<br>enfin <span class="hl">compris.</span></h1>
+      <p style="margin: 0; font-size: 19px; line-height: 1.55; color: #4E5468; max-width: 520px">Budget, appart, job, épargne, Bourse : des fiches claires, des jeux et des outils gratuits. Cinq minutes par jour, sans jargon.</p>
+      <div style="display: flex; gap: 12px; flex-wrap: wrap; align-items: center"><a class="btn-ink" href="/telecharger/"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true"><path d="M16.4 12.6c0-2.4 2-3.6 2.1-3.7-1.2-1.7-3-1.9-3.6-2-1.5-.2-3 .9-3.8.9-.8 0-2-.9-3.3-.9-1.7 0-3.3 1-4.2 2.5-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8s2 .8 3.3.8c1.4 0 2.2-1.2 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9-.1 0-2.8-1.1-2.8-4.2zM14 5.3c.7-.8 1.2-2 1-3.1-1 0-2.2.7-2.9 1.5-.6.7-1.2 1.9-1 3 1.1.1 2.2-.6 2.9-1.4z"/></svg>Bientôt sur l’App Store</a><a class="link-b" href="/outils/">Essayer un outil gratuit →</a></div>
+    </div>
+    <div class="phone hide-m" aria-hidden="true"><div class="in">
+    <div style="display: flex; justify-content: space-between; align-items: center"><span style="font-size: 14px; font-weight: 800">Salut Sam</span><span style="display: inline-flex; align-items: center; gap: 4px; padding: 5px 9px; border-radius: 999px; background: #FFFFFF; font-size: 12px; font-weight: 800"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5c1.2 3.2 5 5 5 10a5 5 0 0 1-10 0c0-2.4 1.2-3.8 2.4-4.8 0 2.2 1 3.3 2.2 3.3C11.6 8 10.8 5.6 12 2.5z" fill="#D9622B"></path></svg> 12 j</span></div>
+    <div style="background: #0B7F58; border-radius: 18px; padding: 14px; color: #FFFFFF; display: flex; flex-direction: column; gap: 8px"><span style="font-size: 10px; font-weight: 800; letter-spacing: 0.08em">REPRENDRE · INVESTIR</span><span style="font-size: 16px; font-weight: 800">Les ETF, c’est quoi ?</span><span style="height: 6px; border-radius: 9px; background: rgba(255,255,255,0.25)"><span style="display: block; width: 40%; height: 6px; border-radius: 9px; background: #C8F27A"></span></span></div>
+    <div style="background: #FFFFFF; border-radius: 14px; padding: 10px 12px; font-size: 12px; font-weight: 800">Défis du jour 2/4</div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px"><span style="height: 70px; border-radius: 14px; background: #FFFFFF; display:flex; flex-direction:column; justify-content:center; padding:0 12px; font-size:12px; font-weight:800"><span style="font-size:20px">🧾</span>Budget</span><span style="height: 70px; border-radius: 14px; background: #FFFFFF; display:flex; flex-direction:column; justify-content:center; padding:0 12px; font-size:12px; font-weight:800"><span style="font-size:20px">🏠</span>Logement</span><span style="height: 70px; border-radius: 14px; background: #FFFFFF; display:flex; flex-direction:column; justify-content:center; padding:0 12px; font-size:12px; font-weight:800"><span style="font-size:20px">💶</span>Job</span><span style="height: 70px; border-radius: 14px; background: #FFFFFF; display:flex; flex-direction:column; justify-content:center; padding:0 12px; font-size:12px; font-weight:800"><span style="font-size:20px">🐷</span>Épargne</span></div>
+    <div style="margin-top: auto; height: 42px; border-radius: 14px; background: #FFF1C9; display:flex; align-items:center; padding:0 12px; font-size:12px; font-weight:800">Mot du jour : Livret A</div>
+  </div></div>
+</div></section>
+<section style="padding: 8px 0 64px"><div class="wrap grid g-stats">
+  <div class="stat"><b>141</b><span>leçons en fiches</span></div>
+  <div class="stat"><b>10</b><span>outils gratuits, aussi sur le web</span></div>
+  <div class="stat"><b>5 min</b><span>par jour suffisent</span></div>
+  <div class="stat lime"><b>1,99 €</b><span>par mois, sans engagement</span></div>
+</div></section>
+<section class="sec white"><div class="wrap stack">
+  <div class="sh"><span class="eyebrow">Passer à l’action</span><h2 class="h2">Les questions que tu te poses vraiment</h2><p class=lead>Des guides interactifs : tu entres tes chiffres, on t’explique chaque étape. Jamais de produit à acheter.</p></div>
+  <div class="grid g-guides"><a class="guide-c" href="/passer-a-l-action/investir-1000/" style="background: #E4ECFB"><span class="tag">Le plus lu</span><span class="t">Investir tes premiers 1 000 €</span><span class="d">Es-tu prêt, quelle enveloppe, 3 façons de faire comparées sur 2, 5 et 8 ans.</span><span class="m">Suivre le guide →</span></a><a class="guide-c" href="/passer-a-l-action/premier-appart/" style="background: #ECE8FB"><span class="tag">Logement</span><span class="t">Louer ton premier appart</span><span class="d">Garant, dépôt de garantie, APL, état des lieux : tout, dans l’ordre.</span><span class="m">Suivre le guide →</span></a><a class="guide-c" href="/passer-a-l-action/premiere-paie/" style="background: #FCE6D8"><span class="tag">Job</span><span class="t">Ta première paie</span><span class="d">Brut, net, impôts : comprendre ta fiche de paie et quoi faire des premiers euros.</span><span class="m">Suivre le guide →</span></a></div>
+</div></section>
+<section class="sec"><div class="wrap stack">
+  <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; flex-wrap: wrap"><div class="sh"><span class="eyebrow">Outils</span><h2 class="h2">10 calculateurs, sans compte</h2></div><a class="link-b" href="/outils/">Voir les 10 calculs →</a></div>
+  <div class="grid g-tools"><a class="tool-c" href="/outils/premier-appart/"><span class="ic" style="background: #ECE8FB"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3E2FA3" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11l8-7 8 7v9H4z"></path><path d="M10 20v-5h4v5"></path></svg></span><span class="t">Mon premier appart</span><span class="d">Tout ce qu’il faut payer avant d’avoir les clés.</span><span class="m">Calculer →</span></a><a class="tool-c" href="/outils/coloc/"><span class="ic" style="background: #E4F4D2"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0B7F58" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.2"></circle><path d="M3.5 19c.8-3.4 2.9-5.2 5.5-5.2s4.7 1.8 5.5 5.2"></path><circle cx="17" cy="9.5" r="2.5"></circle><path d="M16 14c2.4 0 4 1.5 4.6 4.5"></path></svg></span><span class="t">Coloc : qui paie quoi</span><span class="d">Loyer et factures partagés au juste prix.</span><span class="m">Calculer →</span></a><a class="tool-c" href="/outils/budget-du-mois/"><span class="ic" style="background: #FCE6D8"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A9441A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="13" rx="3"></rect><path d="M16 12.5h2"></path></svg></span><span class="t">Budget du mois</span><span class="d">Tes besoins, tes envies, ton épargne.</span><span class="m">Calculer →</span></a><a class="tool-c" href="/outils/payer-en-3-ou-4-fois/"><span class="ic" style="background: #ECE8FB"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3E2FA3" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"></rect><path d="M3 10h18M7 15h4"></path></svg></span><span class="t">Payer en 3 ou 4 fois</span><span class="d">Le vrai coût, frais compris.</span><span class="m">Calculer →</span></a><a class="tool-c" href="/outils/mes-abonnements/"><span class="ic" style="background: #E4ECFB"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#24336B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 2l3 3-3 3"></path><path d="M4 11V9a4 4 0 0 1 4-4h12"></path><path d="M7 22l-3-3 3-3"></path><path d="M20 13v2a4 4 0 0 1-4 4H4"></path></svg></span><span class="t">Mes abonnements</span><span class="d">Ce qu’ils te coûtent sur 1 an et 5 ans.</span><span class="m">Calculer →</span></a><a class="tool-c" href="/outils/salaire-brut-net/"><span class="ic" style="background: #E4F4D2"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0B7F58" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h7l4 4v14H7z"></path><path d="M14 3v4h4M10 12h5M10 16h5"></path></svg></span><span class="t">Salaire brut → net</span><span class="d">Job, stage, alternance : ce que tu touches.</span><span class="m">Calculer →</span></a><a class="tool-c" href="/outils/micro-entreprise/"><span class="ic" style="background: #FCE6D8"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A9441A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c3 2 5 5.5 5 9.5L15 16H9l-2-3.5C7 8.5 9 5 12 3z"></path><circle cx="12" cy="10" r="1.8"></circle><path d="M9 16l-2 4 3-1M15 16l2 4-3-1"></path></svg></span><span class="t">Micro-entreprise</span><span class="d">Tes cotisations et ce qu’il te reste.</span><span class="m">Calculer →</span></a><a class="tool-c" href="/outils/comparateur-livrets/"><span class="ic" style="background: #FFF1C9"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#8A5A00" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="6" rx="7" ry="3"></ellipse><path d="M5 6v6c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"></path></svg></span><span class="t">Comparateur de livrets</span><span class="d">Livret A, LDDS, LEP, Livret jeune.</span><span class="m">Calculer →</span></a></div>
+</div></section>
+<section class="sec green"><div class="wrap" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; align-items: center">
+  <div class="sh"><span class="eyebrow">Notre méthode</span><h2 class="h2">Apprendre comme en cours, mais en mieux</h2><p class=lead>Toutes les leçons sont des fiches : l’essentiel, illustré, que tu relis en deux minutes.</p></div>
+  <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px">
+    <div class="mini"><b>Des fiches, pas des pavés</b><span>L’essentiel en phrases courtes et en dessins.</span></div>
+    <div class="mini"><b>Zéro jargon</b><span>Chaque mot nouveau est expliqué avant d’être utilisé.</span></div>
+    <div class="mini"><b>Indépendant</b><span>Aucune banque, aucun courtier, aucune pub.</span></div>
+    <div class="mini"><b>Chiffres vérifiés</b><span>Sources officielles, datées, mises à jour.</span></div>
+  </div>
+</div></section>
+<section class="sec"><div class="wrap" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; align-items: start">
+  <div class="sh"><span class="eyebrow">Prix</span><h2 class="h2">L’app des étudiants, au prix étudiant</h2><p class=lead>Un prix simple, sans surprise. Tu résilies en deux clics.</p></div>
+  <div style="display: flex; flex-direction: column; gap: 14px"><div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px">
+  <div class="price"><span class="n">Premium · mensuel</span><span class="a">1,99 €</span><span class="s">par mois, sans engagement</span></div>
+  <div class="price lime"><span class="n">Gratuit · pour toujours</span><span class="a">0 €</span><span class="s">leçons Débutant, 10 outils, 1 partie de jeu par jour</span></div>
+</div><span style="font-size: 14px; color: #5B6175">Pas d’essai piège, pas de pièces à acheter : un seul prix, c’est tout.</span></div>
+</div></section>
+<section class="sec white"><div class="wrap" style="display: flex; flex-direction: column; gap: 24px; max-width: 860px">
+  <div class="sh"><span class="eyebrow">Questions</span><h2 class="h2">Tu te demandes peut-être</h2></div>
+  <details class="q" open><summary>Est-ce que YouBiff me dit où placer mon argent ?</summary><p>Non. YouBiff t’explique comment ça marche pour que tu décides toi-même. On ne recommande jamais de produit, de banque ou de courtier.</p></details><details class="q"><summary>C’est vraiment pour les étudiants ?</summary><p>Oui : APL, bourse, job, alternance, coloc, premier appart. Les exemples parlent de ta vie, pas de celle d’un cadre de 45 ans.</p></details><details class="q"><summary>Qu’est-ce qui est gratuit ?</summary><p>Les leçons Débutant de tous les thèmes, les 10 outils et une partie de jeu par jour. Pour toujours.</p></details><details class="q"><summary>Faut-il créer un compte ?</summary><p>Non pour commencer. Tu peux en créer un plus tard pour sauvegarder ta progression et défier tes amis.</p></details>
+</div></section>
+<section style="padding: 88px 0"><div class="wrap" style="display: flex; flex-direction: column; align-items: center; gap: 22px; text-align: center">
+  <h2 style="margin: 0; font-size: 48px; line-height: 1.05; font-weight: 800; letter-spacing: -0.04em; max-width: 760px" class="h2">L’école ne t’a pas appris l’argent. <span class="hl">YouBiff, si.</span></h2>
+  <a class="btn-ink" href="/telecharger/"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true"><path d="M16.4 12.6c0-2.4 2-3.6 2.1-3.7-1.2-1.7-3-1.9-3.6-2-1.5-.2-3 .9-3.8.9-.8 0-2-.9-3.3-.9-1.7 0-3.3 1-4.2 2.5-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8s2 .8 3.3.8c1.4 0 2.2-1.2 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9-.1 0-2.8-1.1-2.8-4.2zM14 5.3c.7-.8 1.2-2 1-3.1-1 0-2.2.7-2.9 1.5-.6.7-1.2 1.9-1 3 1.1.1 2.2-.6 2.9-1.4z"/></svg>Bientôt sur l’App Store</a>
+</div></section>
 </main>
-<footer>
-<p><a href="/a-propos/">À propos</a><a href="/confidentialite/">Confidentialité</a><a href="/conditions/">Conditions</a><a href="/mentions-legales/">Mentions légales</a></p>
-<p>YouBiff est une application d’éducation financière. Ce n’est pas un conseil en investissement.</p>
+<footer class="site-f">
+  <div class="wrap">
+    <div class="cols">
+      <div class="col"><a class="logo" href="/">You<span>Biff</span></a><span>L’app des étudiants, au prix étudiant.</span></div>
+      <div class="col"><b>Produit</b><a href="/apprendre/">Apprendre</a><a href="/outils/">Outils</a><a href="/passer-a-l-action/">Passer à l’action</a><a href="/prix/">Prix étudiant</a></div>
+      <div class="col"><b>Ressources</b><a href="/lexique/">Lexique</a><a href="/nouveautes/">Nouveautés de l’app</a><a href="/aide/">Aide et contact</a><a href="/a-propos/">À propos</a></div>
+      <div class="col"><b>Légal</b><a href="/mentions-legales/">Mentions légales</a><a href="/conditions/">CGU et CGV</a><a href="/confidentialite/">Confidentialité</a></div>
+    </div>
+    <p class="legal">YouBiff est un service d’éducation financière. Il ne fournit aucun conseil en investissement et ne recommande aucun produit, courtier ou banque. Investir comporte un risque de perte en capital. Les calculs sont des estimations. © 2026 YouBiff · <a href="mailto:contact@youbiff.fr">contact@youbiff.fr</a></p>
+  </div>
 </footer>
+<script src="/assets/site.js" defer></script>
 </body>
 </html>
